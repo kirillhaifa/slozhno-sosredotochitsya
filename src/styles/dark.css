@@ -1,0 +1,102 @@
+.page.theme_dark {
+  --accent-color: #ff0070;
+  --accent-text: #000028;
+  --main-text: #f1b2ce;
+  --accent-header: #db00ff;
+}
+
+:root.theme-dark {
+  --accent-color: #ff0070;
+  --accent-text: #000028;
+  --main-text: #f1b2ce;
+  --accent-header: #db00ff;
+}
+
+.theme_dark .header {
+  background-image: url(../images/cover-image-dark.png);
+}
+
+.theme_dark .header__decoration {
+  position: absolute;
+  display: block;
+}
+
+.theme_dark .header::before {
+  border-top: 1px solid var(--accent-color);
+  border-right: 1px solid var(--accent-color);
+}
+
+.theme_dark .header::after {
+  border-bottom: 1px solid var(--accent-color);
+  border-left: 1px solid var(--accent-color);
+}
+
+.theme_dark .header__theme-menu-button {
+  color: var(--accent-color);
+}
+
+.theme_dark .header__theme-menu-button:hover {
+  outline: 1px solid var(--accent-color);
+}
+
+.theme_dark .header__theme-menu-button:focus {
+  border-bottom: 1px solid var(--accent-color);
+  outline: none;
+}
+
+.theme_dark .header__theme-menu-button_active {
+  display: flex;
+  justify-content: center;
+  outline: 1px solid var(--accent-color);
+  pointer-events: none;
+}
+
+.theme_dark .header__title {
+  text-shadow: 4px 4px 0 var(--accent-color);
+}
+
+@media (width >= 900px) {
+
+  .theme_dark .header__title {
+    text-shadow: 4px 4px 0 var(--shadow-color);
+  }
+}
+
+.theme_dark .header__text {
+  color: var(--accent-text);
+}
+
+.theme_dark .article__title {
+  color: var(--accent-color);
+}
+
+.theme_dark .article__section-title {
+  color: var(--accent-text);
+}
+
+.theme_dark .article__section-subtitle {
+  color: var(--accent-text);
+}
+
+.footer__title {
+  text-shadow: 2px 2px 0 var(--accent-color);
+}
+
+@media (width >= 900px) {
+
+  .theme_dark .footer__title {
+    text-shadow: 2px 2px 0 var(--shadow-color);
+  }
+}
+
+.theme_dark .footer::before {
+  border-top: 1px solid var(--accent-color);
+  border-right: 1px solid var(--accent-color);
+}
+
+.theme_dark .footer::after {
+  border-bottom: 1px solid var(--accent-color);
+  border-left: 1px solid var(--accent-color);
+}
+
+/* Остальные стили */
