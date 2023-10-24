@@ -1,3 +1,12 @@
+.page.theme_light {
+  --accent-color: #ff8dcb;
+  --accent-text: #fff1f7;
+  --main-text: #353430;
+  --accent-header: #ffc2e6;
+  --shadow-color: #ff0070;
+  background-image: url(../images/cover-image-light.png);
+}
+
 @media (prefers-color-scheme: light) {
 
   :root {
@@ -8,17 +17,6 @@
     --shadow-color: #ff0070;
   }
 }
-
-.page.theme_light {
-  --accent-color: #ff8dcb;
-  --accent-text: #fff1f7;
-  --main-text: #353430;
-  --accent-header: #ffc2e6;
-  --shadow-color: #ff0070;
-  background-image: url(../images/cover-image-light.png);
-}
-
-
 
 .theme_light .header__decoration {
   display: none;
