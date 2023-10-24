@@ -52,13 +52,7 @@
 
 .theme_dark .header__title {
   text-shadow: 4px 4px 0 var(--accent-color);
-}
 
-@media (width >= 900px) {
-
-  .theme_dark .header__title {
-    text-shadow: 4px 4px 0 var(--shadow-color);
-  }
 }
 
 .theme_dark .header__text {
@@ -79,13 +73,6 @@
 
 .footer__title {
   text-shadow: 2px 2px 0 var(--accent-color);
-}
-
-@media (width >= 900px) {
-
-  .theme_dark .footer__title {
-    text-shadow: 2px 2px 0 var(--shadow-color);
-  }
 }
 
 .theme_dark .footer::before {
