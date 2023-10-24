@@ -1,15 +1,16 @@
 .page.theme_light {
-
   --accent-color: #ff8dcb;
   --accent-text: #fff1f7;
   --main-text: #353430;
   --accent-header: #ffc2e6;
   --shadow-color: #ff0070;
+  background-image: url(../images/cover-image-light.png);
+
 }
 
 @media (prefers-color-scheme: light) {
 
-  :root {
+  :root.theme_light {
     --accent-color: #ff8dcb;
     --accent-text: #fff1f7;
     --main-text: #353430;
@@ -18,87 +19,83 @@
   }
 }
 
-.header__decoration {
+.theme_light .header__decoration {
   display: none;
 }
 
-.header::before {
+.theme_light .header::before {
   border-top: 1px solid var(--main-text);
   border-right: 1px solid var(--main-text);
 }
 
-.header::after {
+.theme_light .header::after {
   border-bottom: 1px solid var(--main-text);
   border-left: 1px solid var(--main-text);
 }
 
-.header__theme-menu-button {
+.theme_light .header__theme-menu-button {
   color: var(--main-text);
 }
 
-.header__theme-menu-button:hover {
+.theme_light .header__theme-menu-button:hover {
   outline: 1px solid var(--main-text);
 }
 
-.header__theme-menu-button:focus {
+.theme_light  .header__theme-menu-button:focus-visible {
   border-bottom: 1px solid var(--main-text);
 }
 
-.header {
-  background-image: url(../images/cover-image-light.png);
-}
-
-.header__theme-menu-button_active {
+.theme_light .header__theme-menu-button_active {
   display: flex;
   justify-content: center;
   outline: 1px solid var(--main-text);
   pointer-events: none;
 }
 
-.header__title {
+.theme_light .header__title {
   text-shadow: 4px 4px 0 var(--accent-color);
 }
 
 @media (width >= 900px) {
 
-  .header__title {
+  .theme_light .header__title {
     text-shadow: 4px 4px 0 var(--shadow-color);
   }
 }
 
-.header__text {
+.theme_light .header__text {
   color: var(--main-text);
 }
 
-.article__title {
+.theme_light .article__title {
   color: var(--main-text);
 }
 
-.article__section-title {
+.theme_light .article__section-title {
   color: var(--main-text);
 }
 
-.article__section-subtitle {
+.theme_light .article__section-subtitle {
   color: var(--main-text);
 }
 
-.footer__title {
+.theme_light .footer__title {
   text-shadow: 2px 2px 0 var(--accent-color);
 }
 
 @media (width >= 900px) {
 
-  .footer__title {
+  .theme_light .footer__title {
     text-shadow: 2px 2px 0 var(--shadow-color);
   }
 }
 
-.footer::before {
+.theme_light .footer::before {
   border-top: 1px solid var(--main-text);
   border-right: 1px solid var(--main-text);
 }
 
-.footer::after {
+.theme_light .footer::after {
   border-bottom: 1px solid var(--main-text);
   border-left: 1px solid var(--main-text);
 }
