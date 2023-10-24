@@ -1,3 +1,10 @@
+:root.theme-dark {
+  --accent-color: #ff0070;
+  --accent-text: #000028;
+  --main-text: #f1b2ce;
+  --accent-header: #db00ff;
+}
+
 .page.theme_dark {
   --accent-color: #ff0070;
   --accent-text: #000028;
@@ -6,14 +13,6 @@
   background-image: url(../images/cover-image-dark.png);
 
 }
-
-:root.theme-dark {
-  --accent-color: #ff0070;
-  --accent-text: #000028;
-  --main-text: #f1b2ce;
-  --accent-header: #db00ff;
-}
-
 
 .theme_dark .header__decoration {
   position: absolute;
