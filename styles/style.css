@@ -209,11 +209,11 @@
 
 .header__text {
   grid-area: text;
-
+  display: inline-block;
   justify-self: end;
   max-width: 364px;
   margin: 0 10px;
-  margin-bottom: clamp(66px, calc(66px + ((100vw - 375px) * 1.17)), 183px);
+  margin-bottom: clamp(4.125rem, -2.8526rem + 29.771vw, 11.4375rem);
   color: var(--accent-text);
   font-weight: 700;
   font-size: 18px;
