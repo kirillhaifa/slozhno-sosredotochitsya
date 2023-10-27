@@ -1,5 +1,10 @@
 .page {
   margin: auto;
+  background-image: url(../images/cover-image-light.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .header {
@@ -12,13 +17,6 @@
     'nav'
     'title'
     'text';
-}
-
-.theme_light .header {
-  background-image: url(../images/cover-image-light.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 
 .header::before {
@@ -89,7 +87,6 @@
   width: 9px;
   height: 9px;
   border-radius: 50%;
-  background-color: var(--accent-color);
   filter: drop-shadow(0 0 4px var(--accent-color));
 }
 
@@ -239,7 +236,6 @@
 
 .main {
   padding: 39px 10px 0;
-  background-color: var(--accent-text);
 }
 
 @media (width >= 600px) {
