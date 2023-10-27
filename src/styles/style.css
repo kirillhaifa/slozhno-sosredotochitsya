@@ -95,8 +95,8 @@
 .header__theme-menu {
   grid-area: nav;
   justify-self: end;
-  margin-top: clamp(4.65625rem, -2.4406rem + 30.2799vw, 12.09375rem);
-  margin-bottom: clamp(4.15625rem, -2.2846rem + 27.4809vw, 10.90625rem);
+  margin-top: 7.3567vh;
+  margin-bottom: 8.6588vh;
 }
 
 @media (min-width: 900px) {
