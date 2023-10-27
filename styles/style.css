@@ -17,6 +17,7 @@
     'nav'
     'title'
     'text';
+  height: 100vh;
 }
 
 .header::before {
@@ -207,22 +208,24 @@
 
 .header__text {
   grid-area: text;
-
   justify-self: end;
   max-width: 364px;
-  margin: 0 10px;
+  margin-right: 10px;
   margin-bottom: clamp(66px, calc(66px + ((100vw - 375px) * 1.17)), 183px);
   color: var(--accent-text);
   font-weight: 700;
   font-size: 18px;
   line-height: 23.4px; /* 130% */
   background-color: var(--accent-color);
+  width: 355px;
+  height: 117px;
 }
 
 @media (width >= 600px) {
 
   .header__text {
     margin-right: 20px;
+    width: 364px;;
   }
 }
 
