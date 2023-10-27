@@ -3,7 +3,14 @@
   --accent-text: #000028;
   --main-text: #f1b2ce;
   --accent-header: #db00ff;
-  background-image: url(../images/cover-image-dark.png);
+  --bg-image: url(../images/cover-image-dark.png);
+  --bg-color: #00183f;
+  background-color: var(--bg-color);
+  background-image: var(--bg-image);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -14,11 +21,93 @@
     --main-text: #f1b2ce;
     --accent-header: #db00ff;
   }
+
+  .page {
+    --accent-color: #ff0070;
+    --accent-text: #000028;
+    --main-text: #f1b2ce;
+    --accent-header: #db00ff;
+    background-image: var(--bg-image);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  .header__decoration {
+    position: absolute;
+    display: block;
+  }
+
+  .header::before {
+    border-top: 1px solid var(--accent-color);
+    border-right: 1px solid var(--accent-color);
+  }
+
+  .header::after {
+    border-bottom: 1px solid var(--accent-color);
+    border-left: 1px solid var(--accent-color);
+  }
+
+  .header__theme-menu-button {
+    color: var(--accent-color);
+  }
+
+  .header__theme-menu-button:hover {
+    outline: 1px solid var(--accent-color);
+  }
+
+  .header__theme-menu-button:focus {
+    border-bottom: 1px solid var(--accent-color);
+    outline: none;
+  }
+
+  .header__theme-menu-button_active {
+    display: flex;
+    justify-content: center;
+    outline: 1px solid var(--accent-color);
+    pointer-events: none;
+  }
+
+  .header__title {
+    text-shadow: 4px 4px 0 var(--accent-color);
+  }
+
+  .header__text {
+    color: var(--accent-text);
+  }
+
+  .article__title {
+    color: var(--accent-color);
+  }
+
+  .article__section-title {
+    color: var(--accent-text);
+  }
+
+  .article__section-subtitle {
+    color: var(--accent-text);
+  }
+
+  .footer__title {
+    text-shadow: 2px 2px 0 var(--accent-color);
+  }
+
+  .footer::before {
+    border-top: 1px solid var(--accent-color);
+    border-right: 1px solid var(--accent-color);
+  }
+
+  .footer::after {
+    border-bottom: 1px solid var(--accent-color);
+    border-left: 1px solid var(--accent-color);
+  }
 }
 
 .theme_dark .header__decoration {
   position: absolute;
   display: block;
+  color: var(--accent-color);
 }
 
 .theme_dark .header::before {
@@ -84,5 +173,3 @@
   border-bottom: 1px solid var(--accent-color);
   border-left: 1px solid var(--accent-color);
 }
-
-/* Остальные стили */

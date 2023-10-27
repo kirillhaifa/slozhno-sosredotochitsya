@@ -1,6 +1,7 @@
 .page {
   margin: auto;
-  background-image: url(../images/cover-image-dark.png);
+  background-color: var(--bg-color);
+  background-image: var(--bg-image);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -9,7 +10,6 @@
 
 .header {
   position: relative;
-  height: 100vh;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(4, auto);
@@ -18,6 +18,18 @@
     'nav'
     'title'
     'text';
+  height: 100vh;
+}
+
+@media (width >= 900px) {
+
+  .header {
+    grid-template-areas:
+      'nav'
+      'nav'
+      'title'
+      'text';
+  }
 }
 
 .header::before {
@@ -31,7 +43,7 @@
   border-right: 1px solid var(--accent-color);
 }
 
-@media (min-width: 600px) {
+@media (width >= 600px) {
 
   .header::before {
     top: 20px;
@@ -50,7 +62,7 @@
   border-left: 1px solid var(--accent-color);
 }
 
-@media (min-width: 600px) {
+@media (width >= 600px) {
 
   .header::after {
     bottom: 20px;
@@ -71,7 +83,7 @@
   text-transform: uppercase;
 }
 
-@media (min-width: 600px) {
+@media (width >= 600px) {
 
   .header__decoration {
     margin-top: 20px;
@@ -95,8 +107,8 @@
 .header__theme-menu {
   grid-area: nav;
   justify-self: end;
-  margin-top: 7.3567vh;
-  margin-bottom: 8.6588vh;
+  margin-top: clamp(4.65625rem, -2.4406rem + 30.2799vw, 12.09375rem);
+  margin-bottom: clamp(4.15625rem, -2.2846rem + 27.4809vw, 10.90625rem);
 }
 
 @media (min-width: 900px) {
@@ -209,11 +221,11 @@
 
 .header__text {
   grid-area: text;
-  display: inline-block;
   justify-self: end;
-  max-width: 364px;
-  margin: 0 10px;
-  margin-bottom: clamp(4.125rem, -2.8526rem + 29.771vw, 11.4375rem);
+  width: 355px;
+  height: 117px;
+  margin-right: 10px;
+  margin-bottom: clamp(66px, calc(66px + ((100vw - 375px) * 1.17)), 183px);
   color: var(--accent-text);
   font-weight: 700;
   font-size: 18px;
@@ -224,6 +236,7 @@
 @media (width >= 600px) {
 
   .header__text {
+    width: 364px;
     margin-right: 20px;
   }
 }
@@ -231,7 +244,8 @@
 @media (width >= 900px) {
 
   .header__text {
-    max-width: calc(50vw - 20px);
+    width: 491px;
+    height: 71px;
     margin-bottom: min(13.085vw, 150px);
   }
 }
@@ -454,10 +468,9 @@
 .footer {
   position: relative;
   display: flex;
-  height: 100vh;
   justify-content: center;
   align-items: center;
-  max-height: 768px;
+  height: 100vh;
   padding: 10px;
 }
 
@@ -482,10 +495,6 @@
 
 @media (width >= 600px) {
 
-  .footer {
-    height: clamp(41.6875rem, 20.3969rem + 90.8397vw, 64rem);
-  }
-
   .footer__title {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
@@ -499,7 +508,7 @@
 @media (width >= 900px) {
 
   .footer {
-    height: 75vw;
+    height: 100vh;
   }
 }
 
