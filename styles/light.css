@@ -23,13 +23,15 @@
     --main-text: #353430;
     --accent-header: #ffc2e6;
     --shadow-color: #ff0070;
+    --bg-color: #FFF1F7;
     --bg-image: url(../images/cover-image-light.png);
     background-image: var(--bg-image);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
-    background-color: #FFF1F7;
+    background-color: var(--bg-color);
+
   }
 
   .header__decoration {
