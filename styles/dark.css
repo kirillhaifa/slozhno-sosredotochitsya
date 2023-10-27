@@ -3,7 +3,9 @@
   --accent-text: #000028;
   --main-text: #f1b2ce;
   --accent-header: #db00ff;
-  background-image: url(../images/cover-image-dark.png);
+  --bg-image: url(../images/cover-image-dark.png);
+
+  background-image: var(--bg-image);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -25,7 +27,7 @@
     --accent-text: #000028;
     --main-text: #f1b2ce;
     --accent-header: #db00ff;
-    background-image: url(../images/cover-image-dark.png);
+    background-image: var(--bg-image);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;

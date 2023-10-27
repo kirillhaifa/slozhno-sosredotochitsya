@@ -4,7 +4,8 @@
   --main-text: #353430;
   --accent-header: #ffc2e6;
   --shadow-color: #ff0070;
-  background-image: url(../images/cover-image-light.png);
+  --bg-image: url(../images/cover-image-light.png);
+  background-image: var(--bg-image);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -19,7 +20,8 @@
     --main-text: #353430;
     --accent-header: #ffc2e6;
     --shadow-color: #ff0070;
-    background-image: url(../images/cover-image-light.png);
+    --bg-image: url(../images/cover-image-light.png);
+    background-image: var(--bg-image);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
