@@ -4,12 +4,13 @@
   --main-text: #f1b2ce;
   --accent-header: #db00ff;
   --bg-image: url(../images/cover-image-dark.png);
+  --bg-color: #00183f;
   background-image: var(--bg-image);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  background-color: #00183f;
+  background-color: var(--bg-color);
 }
 
 @media (prefers-color-scheme: dark) {
