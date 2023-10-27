@@ -209,7 +209,6 @@
 .header__text {
   grid-area: text;
   justify-self: end;
-  max-width: 364px;
   margin-right: 10px;
   margin-bottom: clamp(66px, calc(66px + ((100vw - 375px) * 1.17)), 183px);
   color: var(--accent-text);
@@ -232,7 +231,8 @@
 @media (width >= 900px) {
 
   .header__text {
-    max-width: calc(50vw - 20px);
+    width: 491px;
+    height: 71px;
     margin-bottom: min(13.085vw, 150px);
   }
 }
@@ -457,7 +457,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: clamp(41.6875rem, 20.3969rem + 90.8397vw, 64rem);
+  height: 100vh;
   max-height: 768px;
   padding: 10px;
   background-color: var(--accent-text);
