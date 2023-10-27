@@ -105,6 +105,8 @@
 .theme_dark .header__decoration {
   position: absolute;
   display: block;
+  color: var(--accent-color);
+
 }
 
 .theme_dark .header::before {
