@@ -17,6 +17,19 @@
     --accent-text: #000028;
     --main-text: #f1b2ce;
     --accent-header: #db00ff;
+    
+  }
+
+  .page {
+    --accent-color: #ff0070;
+    --accent-text: #000028;
+    --main-text: #f1b2ce;
+    --accent-header: #db00ff;
+    background-image: url(../images/cover-image-dark.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
   }
 }
 
