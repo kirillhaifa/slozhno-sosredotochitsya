@@ -460,7 +460,6 @@
   height: 100vh;
   max-height: 768px;
   padding: 10px;
-  background-color: var(--accent-text);
 }
 
 .footer__title {
@@ -483,10 +482,6 @@
 }
 
 @media (width >= 600px) {
-
-  .footer {
-    height: clamp(41.6875rem, 20.3969rem + 90.8397vw, 64rem);
-  }
 
   .footer__title {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
