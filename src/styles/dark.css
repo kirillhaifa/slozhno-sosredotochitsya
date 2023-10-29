@@ -1,4 +1,29 @@
 .page.theme_dark {
+
+  /*в ревью получено замечание: 
+  Задайте правило для корня.
+  То есть, :root.theme-dark 
+  если изменить правило .page.theme_dark 
+  ломается переключение стилей, тк это правло 
+  используется скриптом. поэтому ниже в правило 
+  указанное ревьером переменные дублированы
+  */
+
+  --accent-color: #ff0070;
+  --accent-text: #000028;
+  --main-text: #f1b2ce;
+  --accent-header: #db00ff;
+  --bg-image: url(../images/cover-image-dark.png);
+  --bg-color: #00183f;
+  background-color: var(--bg-color);
+  background-image: var(--bg-image);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+:root.theme_dark {
   --accent-color: #ff0070;
   --accent-text: #000028;
   --main-text: #f1b2ce;
@@ -85,7 +110,7 @@
     color: var(--accent-text);
   }
 
-  .article__section-subtitle {
+  .article__section-title-small {
     color: var(--accent-text);
   }
 
@@ -156,7 +181,7 @@
   color: var(--accent-text);
 }
 
-.theme_dark .article__section-subtitle {
+.theme_dark .article__section-title-small {
   color: var(--accent-text);
 }
 

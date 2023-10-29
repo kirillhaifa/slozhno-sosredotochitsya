@@ -1,4 +1,31 @@
 .page.theme_light {
+
+  /*в ревью получено замечание: 
+  "Задайте правило для корня.
+  То есть, :root.theme_light"
+
+  Если изменить правило .page.theme_light 
+  ломается переключение стилей, т.к. это правло 
+  используется скриптом. поэтому ниже в правило, 
+  указанное ревь.ером, переменные дублированы
+  */
+
+  --accent-color: #ff8dcb;
+  --accent-text: #fff1f7;
+  --main-text: #353430;
+  --accent-header: #ffc2e6;
+  --shadow-color: #ff0070;
+  --bg-image: url(../images/cover-image-light.png);
+  --bg-color: #fff1f7;
+  background-color: var(--bg-color);
+  background-image: var(--bg-image);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+:root.theme_light {
   --accent-color: #ff8dcb;
   --accent-text: #fff1f7;
   --main-text: #353430;
@@ -16,19 +43,12 @@
 
 @media (prefers-color-scheme: light) {
 
-  @media (width >= 900px) {
-
-    .header__title {
-      text-shadow: 4px 4px 0 var(--shadow-color);
-    }
-  }
-
-  @media (width >= 900px) {
-
-    .footer__title {
-      text-shadow: 2px 2px 0 var(--shadow-color);
-    }
-  }
+  /*Получено замечание от ревьюера:
+  "Предпочитаемая тема может быть только одна из двух. Выберете одну тему."
+  
+  Не совсем понимаю, что имеется ввиду. Здесь описан вариант для светлой темы, 
+  в файле dark.css для темной. если удалить один из двух этих медиазапросов 
+  переключение тем ломается*/
 
   :root {
     --accent-color: #ff8dcb;
@@ -78,7 +98,7 @@
     outline: 1px solid var(--main-text);
     pointer-events: none;
   }
-
+  
   .header__title {
     text-shadow: 4px 4px 0 var(--accent-color);
   }
@@ -95,7 +115,7 @@
     color: var(--main-text);
   }
 
-  .article__section-subtitle {
+  .article__section-title-small {
     color: var(--main-text);
   }
 
@@ -151,13 +171,6 @@
   text-shadow: 4px 4px 0 var(--accent-color);
 }
 
-@media (width >= 900px) {
-
-  .theme_light .header__title {
-    text-shadow: 4px 4px 0 var(--shadow-color);
-  }
-}
-
 .theme_light .header__text {
   color: var(--main-text);
 }
@@ -170,19 +183,12 @@
   color: var(--main-text);
 }
 
-.theme_light .article__section-subtitle {
+.theme_light .article__section-title-small {
   color: var(--main-text);
 }
 
 .theme_light .footer__title {
   text-shadow: 2px 2px 0 var(--accent-color);
-}
-
-@media (width >= 900px) {
-
-  .theme_light .footer__title {
-    text-shadow: 2px 2px 0 var(--shadow-color);
-  }
 }
 
 .theme_light .footer::before {

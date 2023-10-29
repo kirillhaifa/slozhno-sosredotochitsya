@@ -5,4 +5,10 @@
   --accent-header: #db00ff;
   --bg-image: url(../images/cover-image-dark.png);
   --bg-color: #00183f;
+  --font-size-standart: 18px;
+  --main-font: 'IBM Plex Mono';
+  --font-weight-normal: 400;
+  --font-weight-bold: 700;
+  --line-height-tall: 130%;
+  --line-height-short: 82.5%;
 }
